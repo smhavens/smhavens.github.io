@@ -18,7 +18,7 @@ import PortfiloTwo from "./Pages/Portfilo/PortfiloTwo";
 import Resume from "./Pages/Resume/Resume";
 import ResumeTwo from "./Pages/Resume/ResumeTwo";
 import NotFound from "./Share/NotFound";
-import Preview from "./Share/Preview";
+// import Preview from "./Share/Preview";
 
 function App() {
   useEffect(() => {
@@ -30,8 +30,8 @@ function App() {
       <ContextProvider>
         <BrowserRouter>
           <Routes>
-            <Route path="/" element={<Preview />} />
-            <Route path="/home" element={<Home />}>
+            {/* <Route path="/" element={<Preview />} /> */}
+              <Route path="/" element={<Home />}>
               <Route index element={<HomePage />} />
               <Route path="homePage" element={<HomePage />} />
               <Route path="resume" element={<Resume />} />
